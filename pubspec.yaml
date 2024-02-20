@@ -1,0 +1,74 @@
+name: sampoorna_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  provider: ^6.1.1
+  cloud_firestore: ^4.15.4
+  firebase_auth: ^4.17.4
+  firebase_storage: ^11.6.5
+  shared_preferences: ^2.2.2
+  smooth_page_indicator: ^1.1.0
+  flutter_native_splash: ^2.3.10
+  firebase_core: ^2.25.4
+  google_fonts: ^6.1.0
+  get: ^4.6.6
+  get_storage: ^2.1.1
+  country_code_picker: ^3.0.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
+    - assets/logo/
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_native_splash:
+  color:  "#7F669D"
+  color_dark: "#1A1B18"
+  #  image: assets/logos/
+  #  image_dark: assets/logos/
+
+  android_12:
+    icon_background_color: "#7F669D"
+    icon_background_color_dark: "#1A1B18"
+  #   image: assets/logos/
+  #   color: "#1A1B18"
+  #  image_dark: assets/logo/
+  #color_dark: "#042a49"
