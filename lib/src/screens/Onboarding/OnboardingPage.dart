@@ -51,7 +51,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         ),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: isDarkTheme ? Ddisable : Dgrey,
+                            color: isDarkTheme ? Ddisable : Lgrey,
                             shape: BoxShape.circle,
                           ),
                           child: Image.asset(
@@ -65,7 +65,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           Text(
                             "Heading hjadsfiu1",
                             textAlign: TextAlign.center,
-                            style: Theme.of(context).textTheme.headlineLarge,
+                            style: Theme.of(context).textTheme.headlineLarge!.copyWith( color: isDarkTheme ? Colors.white : Colors.black,),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(
@@ -74,7 +74,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             child: Text(
                               "Hello my name is pragati gangwar i am doing great ahiidw ghfj hgdyg g ram ram ji chlo chlyte hain by bye",
                               textAlign: TextAlign.center,
-                              style: Theme.of(context).textTheme.titleLarge,
+                              style: Theme.of(context).textTheme.titleLarge!.copyWith( color: isDarkTheme ? Colors.white : Colors.black,),
 
                             ),
                           )
@@ -155,7 +155,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         ),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: isDarkTheme ? Ddisable : Dgrey,
+                            color: isDarkTheme ? Ddisable : Lgrey,
                             shape: BoxShape.circle),
                           child: Image.asset(
                             "assets/images/onboardin1.png",
@@ -168,7 +168,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           Text(
                             "Heading hjadsfiu1",
                             textAlign: TextAlign.center,
-                            style: Theme.of(context).textTheme.headlineLarge,
+                            style: Theme.of(context).textTheme.headlineLarge!.copyWith( color: isDarkTheme ? Colors.white : Colors.black,),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(
@@ -177,7 +177,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             child: Text(
                               "description textTheme.headlineLarge textTheme.headlineLarge textTheme.headlineLarge",
                               textAlign: TextAlign.center,
-                              style: Theme.of(context).textTheme.titleLarge,
+                              style: Theme.of(context).textTheme.titleLarge!.copyWith( color: isDarkTheme ? Colors.white : Colors.black,),
                             ),
                           )
                         ],
@@ -260,7 +260,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         ),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: isDarkTheme ? Ddisable : Dgrey,
+                            color: isDarkTheme ? Ddisable : Lgrey,
                             shape: BoxShape.circle),
                           child: Image.asset(
                             "assets/images/onboardin1.png",
@@ -273,7 +273,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           Text(
                             "Heading hjadsfiu1",
                             textAlign: TextAlign.center,
-                            style: Theme.of(context).textTheme.headlineLarge,
+                            style: Theme.of(context).textTheme.headlineLarge!.copyWith( color: isDarkTheme ? Colors.white : Colors.black,),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(
@@ -282,7 +282,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             child: Text(
                               "description textTheme.headlineLarge textTheme.headlineLarge textTheme.headlineLarge",
                               textAlign: TextAlign.center,
-                              style: Theme.of(context).textTheme.titleLarge,
+                              style: Theme.of(context).textTheme.titleLarge!.copyWith( color: isDarkTheme ? Colors.white : Colors.black,),
                             ),
                           )
                         ],
@@ -363,7 +363,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         ),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: isDarkTheme ? Ddisable : Dgrey,
+                            color: isDarkTheme ? Ddisable : Lgrey,
                             shape: BoxShape.circle),
                           child: Image.asset(
                             "assets/images/onboardin1.png",
@@ -376,7 +376,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           Text(
                             "Heading hjadsfiu1",
                             textAlign: TextAlign.center,
-                            style: Theme.of(context).textTheme.headlineLarge,
+                            style: Theme.of(context).textTheme.headlineLarge!.copyWith( color: isDarkTheme ? Colors.white : Colors.black,),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(
@@ -385,7 +385,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             child: Text(
                               "description textTheme.headlineLarge textTheme.headlineLarge textTheme.headlineLarge",
                               textAlign: TextAlign.center,
-                              style: Theme.of(context).textTheme.titleLarge,
+                              style: Theme.of(context).textTheme.titleLarge!.copyWith( color: isDarkTheme ? Colors.white : Colors.black,),
                             ),
                           )
                         ],

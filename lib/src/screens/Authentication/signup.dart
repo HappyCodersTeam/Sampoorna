@@ -540,8 +540,7 @@ class _signupState extends State<signup> {
                               ),
                               Container(
                                 child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 20.0 , vertical: 30),
+                                  padding: const EdgeInsets.only(left: 20.0, right: 20,bottom: 15, top:30),
                                   child: ElevatedButton(
                                     onPressed: () {
                                       controller.signup();
@@ -555,6 +554,47 @@ class _signupState extends State<signup> {
                                   ),
                                 ),
                               ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20.0, right: 20,bottom: 20),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "Do you have already an account?",
+                                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    TextButton(
+                                        style: ButtonStyle(
+                                          backgroundColor: MaterialStateProperty.all(Colors.transparent),
+                                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                            RoundedRectangleBorder(
+                                              borderRadius: BorderRadius.circular(20.0), // Adjust the border radius here
+                                              side: BorderSide(color:isDarkTheme ? Dcream : Lpurple1, width: 2.0), // Specify border color and width
+                                            ),
+                                          ),
+                                        ),
+                                        onPressed: () {
+                                          Get.to(login());
+                                          // Navigator.pushNamed(context, signup().id);
+                                        },
+                                        child: Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                          child: Text(
+                                            "Login",
+                                            style:
+                                            Theme.of(context).textTheme.titleMedium!.copyWith(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        )),
+                                  ],
+                                ),
+                              )
                             ],
                           ),
 
