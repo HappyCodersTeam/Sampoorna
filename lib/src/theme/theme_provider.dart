@@ -55,8 +55,8 @@ class ThemeProvider with ChangeNotifier {
         centerTitle: true,
         scrolledUnderElevation: 0,
         backgroundColor: Lpurple1,
-        iconTheme: IconThemeData(color: Colors.black),
-        actionsIconTheme: IconThemeData(color: Colors.black),
+        iconTheme: IconThemeData(color:Lcream),
+        actionsIconTheme: IconThemeData(color: Lcream),
         titleTextStyle: TextStyle(
             fontSize: 18.0, fontWeight: FontWeight.w600, color: Colors.black),
       ),
@@ -163,6 +163,7 @@ class ThemeProvider with ChangeNotifier {
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
+
           backgroundColor: Colors.grey[900], // Background color
           foregroundColor: Dcream,
           padding: const EdgeInsets.all(8),// Text color

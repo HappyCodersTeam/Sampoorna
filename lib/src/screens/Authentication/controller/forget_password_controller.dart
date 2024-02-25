@@ -6,7 +6,7 @@ import 'package:sampoorna_app/src/screens/Authentication/authrepo.dart';
 import 'package:sampoorna_app/src/screens/Authentication/reset_password.dart';
 
 
-import '../user/user_model.dart';
+
 
 
 class forgetPasswordController extends GetxController {

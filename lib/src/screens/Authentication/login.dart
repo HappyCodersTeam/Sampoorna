@@ -18,12 +18,12 @@ class login extends StatefulWidget {
 }
 
 class _loginState extends State<login> {
+  bool isPasswordVisible = true;
   @override
   Widget build(BuildContext context) {
     final controller =Get.put(loginController());
     final themeProvider = Provider.of<ThemeProvider>(context);
     bool isDarkTheme = themeProvider.isDark;
-    bool isPasswordVisible = true;
     return Consumer<ThemeProvider>(
         builder: (context, ThemeProvider notifier, child) {
       return Scaffold(
@@ -38,6 +38,7 @@ class _loginState extends State<login> {
             Padding(
               padding: const EdgeInsets.only(right: 20),
               child: Switch(
+                  activeColor: Dcream,
                   value: notifier.isDark,
                   onChanged: (value) => notifier.changeTheme()),
             ), // Place the toggle button in the app bar
@@ -95,7 +96,7 @@ class _loginState extends State<login> {
                                               padding: EdgeInsets.only(bottom: 15),
                                               child: Text.rich(TextSpan(children: [
                                                 TextSpan(
-                                                  text: 'Enter Mobile No./Email ID',
+                                                  text: 'Enter your Email ID',
                                                   style: Theme.of(context)
                                                       .textTheme
                                                       .titleMedium!
@@ -129,7 +130,7 @@ class _loginState extends State<login> {
                                             },
                                             decoration: InputDecoration(
                                               hintText:
-                                                  'enter your mobile no. or email id',
+                                                  'enter your registered email id',
                                               contentPadding: EdgeInsets.symmetric(
                                                   vertical: 10.0, horizontal: 20.0),
                                             ),
@@ -267,7 +268,9 @@ class _loginState extends State<login> {
                                 children: [
                                   Text(
                                     "Don't have an account?",
-                                    style: Theme.of(context).textTheme.bodyLarge,
+                                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                   SizedBox(
                                     width: 10,
@@ -291,7 +294,9 @@ class _loginState extends State<login> {
                                         child: Text(
                                           "Register Now",
                                           style:
-                                              Theme.of(context).textTheme.titleMedium,
+                                              Theme.of(context).textTheme.titleMedium!.copyWith(
+                                                fontWeight: FontWeight.bold,
+                                              ),
                                         ),
                                       )),
                                 ],

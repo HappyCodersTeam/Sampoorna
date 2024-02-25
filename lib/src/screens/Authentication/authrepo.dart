@@ -16,14 +16,15 @@ import 'login.dart';
 
 class authenticationRepository extends GetxController{
   static authenticationRepository get instance => Get.find();
+
   final _auth = FirebaseAuth.instance;
   final deviceStorage =GetStorage();
 
+  // get authenticated user data
+  User? get authUser =>_auth.currentUser;
 
   @override
   void onReady() {
-
-      print("hellojwd");
       FlutterNativeSplash.remove();
       screenRedirect();
 

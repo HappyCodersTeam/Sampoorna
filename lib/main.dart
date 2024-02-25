@@ -17,6 +17,10 @@ import 'package:sampoorna_app/src/theme/theme_provider.dart';
 
 import 'firebase_options.dart';
 
+// Future<void> backgroundHandler(RemoteMessage message) async {
+//   print(message.data.toString());
+//   print(message.notification!.title);
+// }
 Future<void> main() async {
 
   final WidgetsBinding widgetsBinding =WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +29,7 @@ Future<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   ).then((FirebaseApp value) => Get.put(authenticationRepository()));
-
+  // FirebaseMessaging.onBackgroundMessage(backgroundHandler);
   runApp(MyApp());
 }
 
